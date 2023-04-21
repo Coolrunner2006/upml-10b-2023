@@ -1,0 +1,10 @@
+n = int(input())
+a = []
+summa = 0
+for i in range(n):
+     el = int(input())
+     a.append(el)
+     summa += a[i]
+     for i in range(n):
+         if summa <= 10:
+          print(summa)
