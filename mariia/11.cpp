@@ -7,24 +7,28 @@ int main()
     // розмір масиву
     int n;
     cin >> n;
-
+    
     // створення масиву
     int a[n];
     for(int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
-
-    // кількість нулів у масиві
+    
+    // чи є хоча б 3 нулі
     int zeros = 0;
     for(int i = 0; i < n; i++)
     {
-        if(a[i] == 0)
+        if(a[i] ==0)
         {
-            zeros ++;
+            zeros +=1;
         }
     }
 
-    // виведення кількості нулів
-    cout << zeros << endl;
+    // виведення
+    if(zeros >= 3)
+        cout << "є" << endl;
+    else
+        cout << "нема" << endl;
 }
+

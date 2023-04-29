@@ -15,20 +15,17 @@ int main()
         cin >> a[i];
     }
     
-    // чи є нуль нулів
-    bool flag = true;
-    for(int i = 1; i < n; i++)
+    // сума елементів на парних місцях (нумерація з 0)
+    int summa = 0;
+    for(int i = 0; i < n; i++)
     {
-        if(a[i] = 00)
+        if(i % 2 == 0)
         {
-            flag = false
+            summa += a[i];
         }
     }
     
     // виведення
-    if(flag)
-        cout << "є" << endl;
-    else
-        cout << "нема" << endl;
+    cout << summa << endl;
 }
 

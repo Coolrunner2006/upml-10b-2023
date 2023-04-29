@@ -15,13 +15,13 @@ int main()
         cin >> a[i];
     }
     
-    // чи є хоча б один нуль
-    bool flag = true;
+    // чи є нуль нулів
+    bool flag = false;
     for(int i = 1; i < n; i++)
     {
-        if(a[i] = 0)
+        if(a[i] == 0)
         {
-            flag = false;
+            flag = true
         }
     }
     
